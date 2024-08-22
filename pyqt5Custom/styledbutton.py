@@ -334,7 +334,7 @@ class StyledButton(QAbstractButton):
         elif self.anim_press.current() > 0.001:                 r = self.anim_press.lerp(r1, r3)
         else:                                                   r = self.anim_hover.lerp(r1, r2)
 
-        if r > self.height()/2: r = self.height()/2
+        if r > self.height() // 2: r = self.height() // 2
 
 
         crn = self.styleDict["default"]["radius-corners"]
